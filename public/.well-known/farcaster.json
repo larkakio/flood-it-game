@@ -1,0 +1,35 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "next",
+    "imageUrl": "https://your-deployed-url.vercel.app/hero-image.png",
+    "button": {
+      "title": "Play Flood It",
+      "action": {
+        "type": "launch_frame",
+        "name": "Flood It",
+        "url": "https://your-deployed-url.vercel.app",
+        "splashImageUrl": "https://your-deployed-url.vercel.app/splash.png",
+        "splashBackgroundColor": "#0A0E27"
+      }
+    }
+  },
+  "name": "Flood It",
+  "version": "1.0.0",
+  "subtitle": "Strategic color puzzle game",
+  "description": "Fill the entire board with a single color within the move limit. A fun and addictive puzzle game with three difficulty levels!",
+  "primaryCategory": "games",
+  "tags": ["puzzle", "casual", "strategy", "colors", "brain teaser"],
+  "homeUrl": "https://your-deployed-url.vercel.app",
+  "iconUrl": "https://your-deployed-url.vercel.app/icon.png",
+  "splashImageUrl": "https://your-deployed-url.vercel.app/splash.png",
+  "splashBackgroundColor": "#0A0E27",
+  "screenshotUrls": [
+    "https://your-deployed-url.vercel.app/screenshot-1.png",
+    "https://your-deployed-url.vercel.app/screenshot-2.png"
+  ]
+}
