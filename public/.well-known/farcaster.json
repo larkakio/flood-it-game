@@ -6,6 +6,9 @@
   },
   "frame": {
     "version": "next",
+    "name": "Flood It",
+    "iconUrl": "https://flood-it-game-xi.vercel.app/icon.png",
+    "homeUrl": "https://flood-it-game-xi.vercel.app",
     "imageUrl": "https://flood-it-game-xi.vercel.app/hero-image.png",
     "button": {
       "title": "Play Flood It",
