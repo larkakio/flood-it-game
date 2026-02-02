@@ -21,14 +21,14 @@
       }
     }
   },
-  "version": "1.0.0",
+  "version": "1",
   "name": "Flood It",
   "iconUrl": "https://flood-it-game-xi.vercel.app/icon.png",
   "homeUrl": "https://flood-it-game-xi.vercel.app",
-  "splashImageUrl": "https://flood-it-game-xi.vercel.app/splash.png",
-  "splashBackgroundColor": "#0A0E27",
+  "splashImageUrl": "https://flood-it-game-xi.vercel.app/icon.png",
+  "splashBackgroundColor": "#0a0e27",
   "primaryCategory": "games",
-  "tags": ["puzzle", "casual", "strategy", "colors", "brain teaser"],
+  "tags": ["puzzle", "casual", "strategy", "colors", "brainteaser"],
   "subtitle": "Strategic color puzzle game",
   "description": "Fill the entire board with a single color within the move limit. A fun and addictive puzzle game with three difficulty levels!",
   "heroImageUrl": "https://flood-it-game-xi.vercel.app/hero-image.png",
