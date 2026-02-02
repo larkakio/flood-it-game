@@ -49,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="base:app_id" content="698078802aafa0bc9ad8a56d" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="icon" href="/icon.png" type="image/png" />
