@@ -4,6 +4,23 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const BASE_URL = 'https://flood-it-game-xi.vercel.app';
+
+const fcMiniappEmbed = {
+  version: '1' as const,
+  imageUrl: `${BASE_URL}/hero-image.png`,
+  button: {
+    title: 'Play Flood It',
+    action: {
+      type: 'launch_frame' as const,
+      name: 'Flood It',
+      url: BASE_URL,
+      splashImageUrl: `${BASE_URL}/splash.png`,
+      splashBackgroundColor: '#0a0e27',
+    },
+  },
+};
+
 export const metadata: Metadata = {
   title: 'Flood It - Color Puzzle Game',
   description: 'Strategic color puzzle game - Fill the board with one color!',
@@ -50,6 +67,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="base:app_id" content="698078802aafa0bc9ad8a56d" />
+        <meta name="fc:miniapp" content={JSON.stringify(fcMiniappEmbed)} />
+        <meta name="fc:frame" content={JSON.stringify(fcMiniappEmbed)} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="icon" href="/icon.png" type="image/png" />

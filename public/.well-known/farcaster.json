@@ -5,7 +5,7 @@
     "signature": "Seq8RO5lbExrGSRnjiF8Vsc4moNjCJF7OC59R3Do2GVFJ2l4e44Cpkj8dvIQ3K0/a/iyUGPKfw8R6cTxog30mRw="
   },
   "frame": {
-    "version": "next",
+    "version": "1",
     "name": "Flood It",
     "iconUrl": "https://flood-it-game-xi.vercel.app/icon.png",
     "homeUrl": "https://flood-it-game-xi.vercel.app",
@@ -17,7 +17,7 @@
         "name": "Flood It",
         "url": "https://flood-it-game-xi.vercel.app",
         "splashImageUrl": "https://flood-it-game-xi.vercel.app/splash.png",
-        "splashBackgroundColor": "#0A0E27"
+        "splashBackgroundColor": "#0a0e27"
       }
     }
   },
@@ -39,5 +39,6 @@
   "tagline": "Fill the board with one color!",
   "ogTitle": "Flood It - Color Puzzle Game",
   "ogDescription": "Strategic color puzzle game - Fill the board with one color within the move limit!",
-  "ogImageUrl": "https://flood-it-game-xi.vercel.app/hero-image.png"
+  "ogImageUrl": "https://flood-it-game-xi.vercel.app/hero-image.png",
+  "noindex": false
 }
