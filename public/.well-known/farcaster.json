@@ -25,7 +25,7 @@
   "name": "Flood It",
   "iconUrl": "https://flood-it-game-xi.vercel.app/icon.png",
   "homeUrl": "https://flood-it-game-xi.vercel.app",
-  "splashImageUrl": "https://flood-it-game-xi.vercel.app/icon.png",
+  "splashImageUrl": "https://flood-it-game-xi.vercel.app/splash.png",
   "splashBackgroundColor": "#0a0e27",
   "primaryCategory": "games",
   "tags": ["puzzle", "casual", "strategy", "colors", "brainteaser"],
