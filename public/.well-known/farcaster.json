@@ -12,6 +12,7 @@
     "imageUrl": "https://flood-it-game-xi.vercel.app/hero-image.png",
     "splashImageUrl": "https://flood-it-game-xi.vercel.app/splash.png",
     "splashBackgroundColor": "#0a0e27",
+    "webhookUrl": "https://flood-it-game-xi.vercel.app/api/webhook",
     "primaryCategory": "games",
     "tags": ["puzzle", "casual", "strategy", "colors", "brainteaser"],
     "subtitle": "Strategic color puzzle game",
