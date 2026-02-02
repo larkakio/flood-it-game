@@ -45,7 +45,7 @@ This game is configured as a Base Mini App for Farcaster. To deploy:
    vercel --prod
    ```
 
-2. **Update manifest**: Replace `your-deployed-url.vercel.app` in `public/.well-known/farcaster.json` with your actual Vercel URL.
+2. **Update manifest**: The manifest at `public/.well-known/farcaster.json` is already configured with `flood-it-game-xi.vercel.app`.
 
 3. **Add account association**:
    - Visit [Base Build Account Tool](https://www.base.dev/preview?tab=account)

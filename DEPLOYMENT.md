@@ -38,24 +38,24 @@ After deployment, update these files with your actual Vercel URL:
 
 **File: `public/.well-known/farcaster.json`**
 
-Replace all instances of `your-deployed-url.vercel.app` with your actual URL (e.g., `flood-it-game.vercel.app`)
+All URLs have been updated to `flood-it-game-xi.vercel.app`:
 
 ```json
 {
-  "homeUrl": "https://YOUR-URL.vercel.app",
-  "iconUrl": "https://YOUR-URL.vercel.app/icon.png",
-  "splashImageUrl": "https://YOUR-URL.vercel.app/splash.png",
+  "homeUrl": "https://flood-it-game-xi.vercel.app",
+  "iconUrl": "https://flood-it-game-xi.vercel.app/icon.png",
+  "splashImageUrl": "https://flood-it-game-xi.vercel.app/splash.png",
   ...
 }
 ```
 
 **File: `app/layout.tsx`**
 
-Update the `openGraph.url`:
+Already configured with your domain:
 
 ```typescript
 openGraph: {
-  url: 'https://YOUR-URL.vercel.app',
+  url: 'https://flood-it-game-xi.vercel.app',
   ...
 }
 ```
@@ -65,7 +65,7 @@ openGraph: {
 To link your mini app to your Farcaster account:
 
 1. Go to [Base Build Account Association Tool](https://www.base.dev/preview?tab=account)
-2. Paste your Vercel URL (e.g., `flood-it-game.vercel.app`)
+2. Paste your Vercel URL: `flood-it-game-xi.vercel.app`
 3. Click "Submit"
 4. Click "Verify" and follow the instructions
 5. Copy the generated `accountAssociation` object
@@ -126,7 +126,7 @@ If you need to add environment variables:
 2. Navigate to **Settings** → **Environment Variables**
 3. Add variables:
    ```
-   NEXT_PUBLIC_APP_URL=https://your-url.vercel.app
+   NEXT_PUBLIC_APP_URL=https://flood-it-game-xi.vercel.app
    NEXT_PUBLIC_APP_NAME=Flood It
    ```
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Flood It - Color Puzzle Game',
     description: 'Strategic color puzzle game - Fill the board with one color!',
-    url: 'https://your-domain.vercel.app',
+    url: 'https://flood-it-game-xi.vercel.app',
     siteName: 'Flood It',
     images: [
       {

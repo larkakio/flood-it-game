@@ -55,12 +55,11 @@ vercel --prod
 
 ### Step 3: Configure Base Integration
 
-After deployment, Vercel will give you a URL like: `flood-it-game.vercel.app`
+Your deployment URL is: `flood-it-game-xi.vercel.app`
 
 **A. Update Manifest:**
 
-Edit `public/.well-known/farcaster.json` and replace all instances of:
-- `your-deployed-url.vercel.app` → Your actual Vercel URL
+✅ Already configured! All URLs in `public/.well-known/farcaster.json` have been updated to `flood-it-game-xi.vercel.app`
 
 **B. Add Account Association:**
 
@@ -116,9 +115,9 @@ Open: http://localhost:3000
 - Must be OFF so Base can validate your manifest
 - Go to: Settings → Deployment Protection → Toggle OFF
 
-**Manifest URL Format:**
+**Manifest URL:**
 ```
-https://your-url.vercel.app/.well-known/farcaster.json
+https://flood-it-game-xi.vercel.app/.well-known/farcaster.json
 ```
 
 ## 🐛 Troubleshooting
