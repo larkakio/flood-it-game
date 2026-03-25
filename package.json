@@ -15,7 +15,8 @@
     "npm": ">=10.0.0"
   },
   "dependencies": {
-    "@coinbase/onchainkit": "latest",
+    "@base-org/account": "^1.0.0",
+    "@tanstack/react-query": "^5.62.0",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.469.0",
     "next": "16.1.6",
