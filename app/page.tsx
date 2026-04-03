@@ -10,6 +10,7 @@ import { Modal } from '@/components/ui/Modal';
 import { Button } from '@/components/ui/Button';
 import { CellColor } from '@/types/game';
 import { Trophy, XCircle, Share2 } from 'lucide-react';
+import { DailyCheckIn } from '@/components/DailyCheckIn';
 
 export default function Home() {
   const { gameState, selectColor, resetGame, changeDifficulty } = useGame('easy');
@@ -52,6 +53,8 @@ export default function Home() {
         </h1>
         <p className="text-gray-400 text-sm">Fill the board with one color!</p>
       </header>
+
+      <DailyCheckIn variant="inline" />
 
       {/* Game Stats */}
       <GameHeader gameState={gameState} />

@@ -18,7 +18,12 @@ import {
 
 import { WalletModal } from "./WalletModal";
 
-export function DailyCheckIn() {
+type DailyCheckInProps = {
+  /** `inline` = in page flow under the title (always visible). `floating` = docked bottom overlay. */
+  variant?: "inline" | "floating";
+};
+
+export function DailyCheckIn({ variant = "inline" }: DailyCheckInProps) {
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
   const { switchChainAsync } = useSwitchChain();
@@ -68,9 +73,14 @@ export function DailyCheckIn() {
 
   const busy = isWriting;
 
+  const outerClass =
+    variant === "floating"
+      ? "pointer-events-auto fixed bottom-4 left-4 right-4 z-[9999] flex max-w-md flex-col gap-2 sm:left-auto sm:right-4 sm:w-80"
+      : "relative z-50 mx-auto mb-4 flex w-full max-w-lg flex-col gap-2 px-4";
+
   return (
     <>
-      <div className="pointer-events-auto fixed bottom-4 left-4 right-4 z-[80] flex max-w-md flex-col gap-2 sm:left-auto sm:right-4 sm:w-80">
+      <div className={outerClass}>
         {err ? (
           <p className="rounded-lg bg-red-950/90 px-3 py-2 text-xs text-red-200">{err}</p>
         ) : null}

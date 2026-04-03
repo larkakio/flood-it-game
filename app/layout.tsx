@@ -1,44 +1,59 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { Providers } from './providers';
+import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Providers } from "./providers";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://flood-it-game-xi.vercel.app";
+const baseAppId =
+  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "698078802aafa0bc9ad8a56d";
 
 export const metadata: Metadata = {
-  title: 'Flood It - Color Puzzle Game',
-  description: 'Strategic color puzzle game - Fill the board with one color!',
-  keywords: ['game', 'puzzle', 'flood it', 'colors', 'strategy'],
-  authors: [{ name: 'Flood It Game' }],
+  metadataBase: new URL(siteUrl),
+  title: "Flood It - Color Puzzle Game",
+  description: "Strategic color puzzle game - Fill the board with one color!",
+  keywords: ["game", "puzzle", "flood it", "colors", "strategy"],
+  authors: [{ name: "Flood It Game" }],
+  icons: { icon: "/icon.png" },
   openGraph: {
-    title: 'Flood It - Color Puzzle Game',
-    description: 'Strategic color puzzle game - Fill the board with one color!',
-    url: 'https://flood-it-game-xi.vercel.app',
-    siteName: 'Flood It',
+    title: "Flood It - Color Puzzle Game",
+    description: "Strategic color puzzle game - Fill the board with one color!",
+    url: siteUrl,
+    siteName: "Flood It",
     images: [
       {
-        url: '/hero-image.png',
+        url: "/hero-image.png",
         width: 1200,
         height: 630,
-        alt: 'Flood It Game Preview'
-      }
+        alt: "Flood It Game Preview",
+      },
     ],
-    locale: 'en_US',
-    type: 'website'
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Flood It - Color Puzzle Game',
-    description: 'Strategic color puzzle game - Fill the board with one color!',
-    images: ['/hero-image.png']
+    card: "summary_large_image",
+    title: "Flood It - Color Puzzle Game",
+    description: "Strategic color puzzle game - Fill the board with one color!",
+    images: ["/hero-image.png"],
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false
+  other: {
+    "base:app_id": baseAppId,
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
-  themeColor: '#0A0E27',
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A0E27",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -48,12 +63,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="base:app_id" content="698078802aafa0bc9ad8a56d" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="icon" href="/icon.png" type="image/png" />
-      </head>
       <body className={`${inter.className} antialiased`}>
         <Providers>{children}</Providers>
       </body>
